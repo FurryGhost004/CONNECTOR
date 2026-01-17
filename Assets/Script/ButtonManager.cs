@@ -1,0 +1,38 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class ButtonManager : MonoBehaviour
+{
+    Item item;
+    [SerializeField] GameObject questPanel;
+    [SerializeField] GameObject shopclose;
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void Return()
+    {
+        SceneManager.LoadScene("Base");
+    }
+
+    public void CloseQuest()
+    {
+        questPanel.SetActive(false);
+    }
+    public void AcceptQuest1()
+    {
+        SceneManager.LoadScene("Model_1");
+    }
+
+    public void Buy()
+    {
+        if (ShopManager.Instance.CurrentItem != null)
+        {
+            ShopManager.Instance.Buy();
+        }
+    }
+    public void CloseShop()
+        {
+        shopclose.SetActive(false);
+    }
+}

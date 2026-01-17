@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c919b323e2971f44d9dfaa60008a047f, type: 3}
+  m_Name: EMP LV2
+  m_EditorClassIdentifier: 
+  id: 4
+  name: EMP LV2
+  level: 2
+  price: 150
+  icon: {fileID: -7564948135241325830, guid: c633535c7d40e224bb311731b593a4ea, type: 3}
+  type: 1
+  prefab: {fileID: 7602827261252435562, guid: 7107184f46ebf0940892152ab121e646, type: 3}
+  effects:
+  - {fileID: 11400000, guid: d2579f370ee5557409f2c688d3c05038, type: 2}
+  destroyTime: 0
+  description: Stronger version of EMP stun for longer

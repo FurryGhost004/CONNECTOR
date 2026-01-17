@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 8f64961d382df8f4288ff7c8de1efca4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4021659658838481029
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_0"
+  - first:
+      213: 6542865408392828498
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_1"
+  - first:
+      213: 4949977418346996993
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_2"
+  - first:
+      213: -6886417509291979508
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_3"
+  - first:
+      213: 4396268967466174614
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_4"
+  - first:
+      213: 5592674915314674874
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_5"
+  - first:
+      213: -6198741274712744701
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_6"
+  - first:
+      213: -7880850681295476734
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_7"
+  - first:
+      213: -8267745522515661303
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_8"
+  - first:
+      213: -1638021849785704644
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_9"
+  - first:
+      213: 5966987603864399581
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_10"
+  - first:
+      213: 3498565557953899748
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_11"
+  - first:
+      213: -5958355317002101197
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_12"
+  - first:
+      213: -9096703154184678450
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_13"
+  - first:
+      213: 7183584828529726978
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_14"
+  - first:
+      213: -8440178218404876461
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_15"
+  - first:
+      213: 71806224708092652
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_16"
+  - first:
+      213: -4829267117903068778
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_17"
+  - first:
+      213: -7624951435632860938
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_18"
+  - first:
+      213: -5581620489763680560
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_19"
+  - first:
+      213: 507081556753570232
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_20"
+  - first:
+      213: -6003239053198654131
+    second: "\u2014Pngtree\u2014ringing bell icon set in_15873399_21"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_0"
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 2570
+        width: 146
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77e96319d13038c0800000000000000
+      internalID: -4021659658838481029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_1"
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 2660
+        width: 109
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25612706c6decca50800000000000000
+      internalID: 6542865408392828498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_2"
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 2307
+        width: 897
+        height: 986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10527c26c3ad1b440800000000000000
+      internalID: 4949977418346996993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_3"
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 2660
+        width: 109
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d0f97d2c78e60a0800000000000000
+      internalID: -6886417509291979508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_4"
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 2570
+        width: 146
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69805ee555fa20d30800000000000000
+      internalID: 4396268967466174614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_5"
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 2570
+        width: 146
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abca197443c2d9d40800000000000000
+      internalID: 5592674915314674874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_6"
+      rect:
+        serializedVersion: 2
+        x: 2381
+        y: 2660
+        width: 109
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30dd13a27a5a9f9a0800000000000000
+      internalID: -6198741274712744701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_7"
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 2406
+        width: 897
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208ec755f0891a290800000000000000
+      internalID: -7880850681295476734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_8"
+      rect:
+        serializedVersion: 2
+        x: 3337
+        y: 2660
+        width: 109
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ea02d6041134d80800000000000000
+      internalID: -8267745522515661303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_9"
+      rect:
+        serializedVersion: 2
+        x: 3460
+        y: 2570
+        width: 146
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3fd1356ec39449e0800000000000000
+      internalID: -1638021849785704644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_10"
+      rect:
+        serializedVersion: 2
+        x: 2802
+        y: 2253
+        width: 223
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde2f7b7c9ffec250800000000000000
+      internalID: 5966987603864399581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_11"
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 996
+        width: 146
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec2249b6d66d8030800000000000000
+      internalID: 3498565557953899748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_12"
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1086
+        width: 109
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e978c686baf4da0800000000000000
+      internalID: -5958355317002101197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_13"
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 733
+        width: 897
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec395ab7da402c180800000000000000
+      internalID: -9096703154184678450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_14"
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 1086
+        width: 109
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 206566e575831b360800000000000000
+      internalID: 7183584828529726978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_15"
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 996
+        width: 146
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fecfad0a67eda80800000000000000
+      internalID: -8440178218404876461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_16"
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 1023
+        width: 146
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce24364816b1ff000800000000000000
+      internalID: 71806224708092652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_17"
+      rect:
+        serializedVersion: 2
+        x: 2381
+        y: 1113
+        width: 109
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691c9ef842ffafcb0800000000000000
+      internalID: -4829267117903068778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_18"
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 859
+        width: 897
+        height: 888
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0af79611bbe2690800000000000000
+      internalID: -7624951435632860938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_19"
+      rect:
+        serializedVersion: 2
+        x: 3337
+        y: 1113
+        width: 109
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de089cbcb91a82b0800000000000000
+      internalID: -5581620489763680560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_20"
+      rect:
+        serializedVersion: 2
+        x: 3460
+        y: 1023
+        width: 146
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9d27e3df3890700800000000000000
+      internalID: 507081556753570232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014ringing bell icon set in_15873399_21"
+      rect:
+        serializedVersion: 2
+        x: 2802
+        y: 707
+        width: 223
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45875c33e530bca0800000000000000
+      internalID: -6003239053198654131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_0": -4021659658838481029
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_1": 6542865408392828498
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_10": 5966987603864399581
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_11": 3498565557953899748
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_12": -5958355317002101197
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_13": -9096703154184678450
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_14": 7183584828529726978
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_15": -8440178218404876461
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_16": 71806224708092652
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_17": -4829267117903068778
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_18": -7624951435632860938
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_19": -5581620489763680560
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_2": 4949977418346996993
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_20": 507081556753570232
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_21": -6003239053198654131
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_3": -6886417509291979508
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_4": 4396268967466174614
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_5": 5592674915314674874
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_6": -6198741274712744701
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_7": -7880850681295476734
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_8": -8267745522515661303
+      "\u2014Pngtree\u2014ringing bell icon set in_15873399_9": -1638021849785704644
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db5d0f3ae819ee448ada59abd31955d, type: 3}
+  m_Name: Setuptutorial
+  m_EditorClassIdentifier: 
+  lines:
+  - charaterName: Rhea
+    charaterPortrait: {fileID: 21300000, guid: ef84c28f74037dd4ebb90cb60ade1617, type: 3}
+    content: '"Uh, my back !"'
+  - charaterName: TutorialNPC
+    charaterPortrait: {fileID: 21300000, guid: 43af21ed129bb4f41872e52757709ecd, type: 3}
+    content: "\u201CYour back still looks pretty stiff. Let\u2019s give it another
+      stretch. Try putting that banana on the ground.\u201D"
