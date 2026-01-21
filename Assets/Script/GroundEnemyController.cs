@@ -185,7 +185,7 @@ public class GroundEnemyController : MonoBehaviour
     {
         if (HealthSystem.Instance != null)
         {
-            HealthSystem.Instance.TakeDamage(amount);
+            HealthSystem.Instance.TakeDamage(amount, transform.position);
             Debug.Log("Gây " + amount + " dame!");
         }
     }

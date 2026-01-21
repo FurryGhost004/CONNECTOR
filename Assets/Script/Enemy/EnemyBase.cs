@@ -156,7 +156,7 @@ public abstract class EnemyBase : MonoBehaviour, ITauntable
         {
             if (currentState == State.Dashing && !hasDealtDamageThisDash)
             {
-                if (HealthSystem.Instance != null) HealthSystem.Instance.TakeDamage(damage);
+                if (HealthSystem.Instance != null) HealthSystem.Instance.TakeDamage(damage, transform.position);
                 hasDealtDamageThisDash = true;
                 rb.linearVelocity = -rb.linearVelocity * 0.3f;
             }
@@ -166,7 +166,7 @@ public abstract class EnemyBase : MonoBehaviour, ITauntable
     // Hàm trừ máu chung (sử dụng logic nãy bạn đưa)
     protected void ApplyDamage(float amount)
     {
-        if (HealthSystem.Instance != null) HealthSystem.Instance.TakeDamage(amount);
+        if (HealthSystem.Instance != null) HealthSystem.Instance.TakeDamage(amount, transform.position);
     }
     public void ApplyTaunt(float duration, Vector3 position)
     {

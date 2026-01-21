@@ -21,6 +21,17 @@ public class HealthSystem : MonoBehaviour
     public float damageFlashDuration = 0.2f;
     public Color damageFlashColor = Color.red;
 
+    [Header("Invincibility Settings")]
+    public float invincibleDuration = 1f;   // Thời gian vô địch
+    public float flashInterval = 0.1f;       // Tốc độ nhấp nháy
+
+    private bool isInvincible = false;
+
+    [Header("Knockback Settings")]
+    public float knockbackForce = 8f;
+    public float knockbackDuration = 0.15f;
+
+
     [Header("References")]
     public FailedManager failedManager;
 
@@ -30,19 +41,20 @@ public class HealthSystem : MonoBehaviour
     private float targetStaminaValue;
     private Image healthFill;
     private Image staminaFill;
+    
 
     public static HealthSystem Instance;
 
     void Awake()
     {
-        // Khởi tạo Singleton để các script khác (như CharacterController) dễ dàng truy cập
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
-        playerSprite = GetComponent<SpriteRenderer>();
+        playerSprite = GetComponentInChildren<SpriteRenderer>();
         if (playerSprite != null)
             originalColor = playerSprite.color;
     }
+
 
     void Start()
     {
@@ -67,6 +79,7 @@ public class HealthSystem : MonoBehaviour
             // Mặc định thanh thể lực màu xanh dương
             if (staminaFill != null) staminaFill.color = new Color(0.2f, 0.5f, 1f);
         }
+        playerSprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     void Update()
@@ -75,7 +88,11 @@ public class HealthSystem : MonoBehaviour
         HandleStaminaLogic();
 
         // Test phím tắt nhanh (Optional)
-        if (Input.GetKeyDown(KeyCode.H)) TakeDamage(20);
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            TakeDamage(20, transform.position + Vector3.left);
+        }
+
     }
 
     // =========================
@@ -91,18 +108,31 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage, Vector2 attackSource)
     {
-        if (currentHealth <= 0) return;
+        if (currentHealth <= 0 || isInvincible) return;
 
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         targetHealthValue = currentHealth;
 
-        StartCoroutine(DamageFlash());
+        // 🔥 Knockback
+        CharaterController player = GetComponent<CharaterController>();
+        if (player != null)
+        {
+            Vector2 dir = (Vector2)transform.position - attackSource;
+            player.Knockback(dir.normalized, knockbackForce, knockbackDuration);
+        }
 
-        if (currentHealth <= 0) Die();
+        StopAllCoroutines();
+        StartCoroutine(InvincibilityFlash());
+
+        if (currentHealth <= 0)
+            Die();
     }
+
+
+
 
     void UpdateHealthBarColor()
     {
@@ -166,6 +196,51 @@ public class HealthSystem : MonoBehaviour
             playerSprite.color = originalColor;
         }
     }
+
+    IEnumerator InvincibilityFlash()
+    {
+        isInvincible = true;
+
+        float timer = 0f;
+        bool invisible = false;
+
+        while (timer < invincibleDuration)
+        {
+            if (playerSprite != null)
+            {
+                Color c = playerSprite.color;
+                c.a = invisible ? 0.2f : 1f;   // mờ / rõ
+                playerSprite.color = c;
+                invisible = !invisible;
+            }
+
+            timer += flashInterval;
+            yield return new WaitForSeconds(flashInterval);
+        }
+
+        // reset
+        Color reset = playerSprite.color;
+        reset.a = 1f;
+        playerSprite.color = reset;
+
+        isInvincible = false;
+    }
+
+    void ApplyKnockback(Vector2 sourcePos)
+    {
+        CharaterController controller = GetComponent<CharaterController>();
+        if (controller != null)
+        {
+            Vector2 dir = ((Vector2)transform.position - sourcePos).normalized;
+            controller.Knockback(dir, knockbackForce, knockbackDuration);
+        }
+    }
+
+    public bool IsInvincible()
+    {
+        return isInvincible;
+    }
+
 
     void Die()
     {

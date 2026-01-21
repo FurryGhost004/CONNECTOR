@@ -139453,7 +139453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1946383874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140570,9 +140570,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1989795147}
     - target: {fileID: 2460675034370474186, guid: 39e90f59a1eba2e4386b768b7f67db59, type: 3}
+      propertyPath: flashInterval
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460675034370474186, guid: 39e90f59a1eba2e4386b768b7f67db59, type: 3}
       propertyPath: staminaSlider
       value: 
       objectReference: {fileID: 1659380181}
+    - target: {fileID: 2460675034370474186, guid: 39e90f59a1eba2e4386b768b7f67db59, type: 3}
+      propertyPath: knockbackForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460675034370474186, guid: 39e90f59a1eba2e4386b768b7f67db59, type: 3}
+      propertyPath: invincibleDuration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3557881835729706162, guid: 39e90f59a1eba2e4386b768b7f67db59, type: 3}
       propertyPath: rewardText
       value: 

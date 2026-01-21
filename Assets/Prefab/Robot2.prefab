@@ -241,6 +241,7 @@ MonoBehaviour:
   attackSFX: {fileID: 8300000, guid: a19a533d2f719ac4d85aede2d22ecb1b, type: 3}
   hitSFX: {fileID: 8300000, guid: 6c08a5a808b1cc041bc0effc52c1dc44, type: 3}
   alertSFX: {fileID: 8300000, guid: c33eec1e7929b2542b8a8c294bc0eaf2, type: 3}
+  sfxMixerGroup: {fileID: 775795474362200579, guid: 32562ec266fc3a4478bcf7a018ab6706, type: 2}
 --- !u!1 &1082719905569958660
 GameObject:
   m_ObjectHideFlags: 0

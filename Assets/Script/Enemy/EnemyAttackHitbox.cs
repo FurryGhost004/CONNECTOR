@@ -4,7 +4,7 @@ public class EnemyAttackHitbox : MonoBehaviour
 {
     public int damage = 10;
     private Collider2D hitbox;
-    private bool hasDealtDamage = false; // Biến cờ để ngăn chặn việc gây sát thương nhiều lần trong 1 đòn đánh
+    private bool hasDealtDamage = false;
 
     private void Awake()
     {
@@ -12,13 +12,13 @@ public class EnemyAttackHitbox : MonoBehaviour
         if (hitbox != null)
         {
             hitbox.enabled = false;
-            hitbox.isTrigger = true; // Đảm bảo luôn là Trigger
+            hitbox.isTrigger = true;
         }
     }
 
     public void EnableHitbox()
     {
-        hasDealtDamage = false; // Reset cờ mỗi khi đòn đánh mới bắt đầu
+        hasDealtDamage = false;
         if (hitbox != null) hitbox.enabled = true;
     }
 
@@ -29,17 +29,17 @@ public class EnemyAttackHitbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Nếu đã đánh trúng rồi thì không xử lý nữa cho đến đòn tiếp theo
         if (hasDealtDamage) return;
 
         if (other.CompareTag("Player"))
         {
-            // Thực hiện trừ máu
             bool hitSuccess = false;
+
+            Vector2 attackSource = transform.position; // 🔥 VỊ TRÍ ENEMY
 
             if (HealthSystem.Instance != null)
             {
-                HealthSystem.Instance.TakeDamage(damage);
+                HealthSystem.Instance.TakeDamage(damage, attackSource);
                 hitSuccess = true;
             }
             else
@@ -47,17 +47,16 @@ public class EnemyAttackHitbox : MonoBehaviour
                 HealthSystem hp = other.GetComponent<HealthSystem>();
                 if (hp != null)
                 {
-                    hp.TakeDamage(damage);
+                    hp.TakeDamage(damage, attackSource);
                     hitSuccess = true;
                 }
             }
 
             if (hitSuccess)
             {
-                hasDealtDamage = true; // Đánh dấu đã gây sát thương xong
+                hasDealtDamage = true;
                 Debug.Log($"<color=red>Player hit!</color> Damage: {damage}");
 
-                // Tắt hitbox ngay lập tức để an toàn
                 DisableHitbox();
             }
         }

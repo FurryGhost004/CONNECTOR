@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 
 public class EnemyAudio : MonoBehaviour
 {
@@ -7,23 +8,27 @@ public class EnemyAudio : MonoBehaviour
     public AudioClip hitSFX;
     public AudioClip alertSFX;
 
-    private AudioSource attackSource; // dùng cho gồng + dash
-    private AudioSource oneShotSource; // dùng cho alert / hit
+    [Header("Audio Mixer")]
+    public AudioMixerGroup sfxMixerGroup; // 🔥 KÉO SFX GROUP VÀO ĐÂY
+
+    private AudioSource attackSource;
+    private AudioSource oneShotSource;
 
     void Awake()
     {
-        // Source cho attack (có thể stop)
+        // Attack source
         attackSource = gameObject.AddComponent<AudioSource>();
         attackSource.playOnAwake = false;
         attackSource.loop = false;
+        attackSource.outputAudioMixerGroup = sfxMixerGroup; // ⭐ QUAN TRỌNG
 
-        // Source cho one-shot
+        // One-shot source
         oneShotSource = gameObject.AddComponent<AudioSource>();
         oneShotSource.playOnAwake = false;
         oneShotSource.loop = false;
+        oneShotSource.outputAudioMixerGroup = sfxMixerGroup; // ⭐ QUAN TRỌNG
     }
 
-    // 🔊 Phát sound gồng / attack (1 lần)
     public void PlayAttackEffect()
     {
         if (attackSFX == null) return;
@@ -33,33 +38,27 @@ public class EnemyAudio : MonoBehaviour
         attackSource.Play();
     }
 
-    // 🔇 Dừng sound gồng khi dash xong / bị stun
     public void StopAttackEffect()
     {
         if (attackSource.isPlaying)
             attackSource.Stop();
     }
 
-    // 💥 Khi enemy bị đánh
     public void PlayHitSFX()
     {
         if (hitSFX == null) return;
         oneShotSource.PlayOneShot(hitSFX);
     }
-    public void StopAllEffects()
-    {
-        if (attackSource != null && attackSource.isPlaying)
-            attackSource.Stop();
 
-        if (oneShotSource != null && oneShotSource.isPlaying)
-            oneShotSource.Stop();
-    }
-
-
-    // 🚨 Khi phát hiện player (CHỈ 1 LẦN)
     public void PlayAlertSFX()
     {
         if (alertSFX == null) return;
         oneShotSource.PlayOneShot(alertSFX);
+    }
+
+    public void StopAllEffects()
+    {
+        attackSource.Stop();
+        oneShotSource.Stop();
     }
 }

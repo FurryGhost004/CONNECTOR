@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,6 +26,7 @@ public class CharaterController : MonoBehaviour
 
     // Biến trạng thái
     public bool isHidden { get; private set; } = false;
+    private bool isKnockback;
 
     void Start()
     {
@@ -38,23 +40,26 @@ public class CharaterController : MonoBehaviour
 
     void Update()
     {
+        if (isKnockback) return;
+
         Move();
         CheckItem();
         Skill();
     }
+
 
     // =========================
     // Movement & Animation
     // =========================
     void Move()
     {
+        if (isKnockback) return;
+
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
 
-        // Di chuyển
         rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, verticalInput * moveSpeed);
 
-        // Lật mặt nhân vật
         if (horizontalInput > 0.01f)
             transform.localScale = new Vector3(1f, 1f, 1f);
         else if (horizontalInput < -0.01f)
@@ -116,24 +121,26 @@ public class CharaterController : MonoBehaviour
     // =========================
     void Skill()
     {
-        // Kiểm tra: Nếu đang giữ phím C VÀ còn thể lực
         if (Input.GetKey(KeyCode.C) && HealthSystem.Instance.currentStamina > 0)
         {
             DarkenCharacter();
             isHidden = true;
             moveSpeed = originalSpeed * 0.5f;
-
-            // Gọi HealthSystem để trừ thể lực từ từ
             HealthSystem.Instance.ConsumeStamina(staminaCostPerSecond);
         }
         else
         {
-            // Tự động hiện hình nếu nhả phím C HOẶC hết thể lực
-            ResetCharacterColor();
+            // ✅ CHỈ reset màu khi KHÔNG vô địch
+            if (!HealthSystem.Instance.IsInvincible())
+            {
+                ResetCharacterColor();
+            }
+
             isHidden = false;
             moveSpeed = originalSpeed;
         }
     }
+
 
     void DarkenCharacter()
     {
@@ -204,4 +211,24 @@ public class CharaterController : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+    public void Knockback(Vector2 direction, float force, float duration)
+    {
+        if (isKnockback) return;
+        StartCoroutine(KnockbackRoutine(direction, force, duration));
+    }
+    IEnumerator KnockbackRoutine(Vector2 dir, float force, float duration)
+    {
+        isKnockback = true;
+
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(dir.normalized * force, ForceMode2D.Impulse);
+
+        yield return new WaitForSeconds(duration);
+
+        rb.linearVelocity = Vector2.zero;
+        isKnockback = false;
+    }
+
+
+
 }
