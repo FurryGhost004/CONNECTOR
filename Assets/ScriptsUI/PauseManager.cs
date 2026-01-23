@@ -1,52 +1,110 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+
 
 public class PauseManager : MonoBehaviour
 {
-    public GameObject pausePanel;
+    [Header("Panels")]
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject settingPanel;
+
     private bool isPaused = false;
+
+    void Awake()
+    {
+        // Đảm bảo game chạy bình thường khi vào scene
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+    }
 
     void Start()
     {
-        // Ẩn panel lúc bắt đầu
-        pausePanel.SetActive(false);
+        if (pausePanel != null)
+            pausePanel.SetActive(false);
+
+        if (settingPanel != null)
+            settingPanel.SetActive(false);
     }
 
     void Update()
     {
-        // Nhấn ESC để pause/resume
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Keyboard.current != null &&
+            Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            if (isPaused)
+            Debug.Log("ESC WORKS");
+
+            if (settingPanel != null && settingPanel.activeSelf)
+            {
+                BackToPause();
+            }
+            else if (isPaused)
+            {
                 ResumeGame();
+            }
             else
+            {
                 PauseGame();
+            }
         }
     }
 
+
+    // ================= PAUSE / RESUME =================
+
     public void PauseGame()
     {
+        if (pausePanel == null) return;
+
         pausePanel.SetActive(true);
-        Time.timeScale = 0f; // Dừng thời gian game
+        settingPanel?.SetActive(false);
+
+        Time.timeScale = 0f;
+        AudioListener.pause = true;
         isPaused = true;
     }
 
     public void ResumeGame()
     {
-        pausePanel.SetActive(false);
-        Time.timeScale = 1f; // Chạy lại game
+        pausePanel?.SetActive(false);
+        settingPanel?.SetActive(false);
+
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
         isPaused = false;
     }
 
-    public void RestartModel()
+    // ================= SETTINGS =================
+
+    // Gọi từ nút "Settings"
+    public void OpenSettings()
     {
-        Time.timeScale = 1f; // Nhớ reset timeScale
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (pausePanel == null || settingPanel == null) return;
+
+        pausePanel.SetActive(false);
+        settingPanel.SetActive(true);
     }
 
-    public void BackWaittingRoom()
+    // Gọi từ nút "Back" trong Settings
+    public void BackToPause()
     {
-        Time.timeScale = 1f; // Nhớ reset timeScale
-        SceneManager.LoadScene("MainMenu");
+        pausePanel?.SetActive(true);
+        settingPanel?.SetActive(false);
+    }
+
+    // ================= OTHER BUTTONS =================
+
+    public void RestartLevel()
+    {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void BackWaitingRoom()
+    {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+        SceneManager.LoadScene("WaittingRoom");
     }
 }
