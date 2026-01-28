@@ -13,6 +13,13 @@ public class EnemySpawner : MonoBehaviour
     public Transform playerTransform;       // Kéo thả Player vào đây
     public int safeDistanceInCells = 7;    // Khoảng cách an toàn (7 ô)
 
+    public void Initialize(QuestData data)
+    {
+
+        enemyPrefabs = data.enemyPrefabs;
+        enemyCount = data.enemyCount;
+        SpawnEnemiesInMap();
+    }
     void Start()
     {
         SpawnEnemiesInMap();

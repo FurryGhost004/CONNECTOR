@@ -5,7 +5,9 @@ public enum ItemType
 {
     ThrowItem,
     SetUpItem,
-    ConsumeableItem
+    ConsumeableItem,
+    KeyItem,
+    QuestItem
 }
 [CreateAssetMenu(fileName = "New item", menuName = "Inventory/Item")]
 public class Item : ScriptableObject

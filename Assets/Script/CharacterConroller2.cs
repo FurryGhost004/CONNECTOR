@@ -12,6 +12,7 @@ public class CharacterConroller2 : MonoBehaviour
     Rigidbody2D rb;
     bool isNearNPC = false;
     bool isNearShop = false;
+    bool isNearQuestBoard = false;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -20,7 +21,7 @@ public class CharacterConroller2 : MonoBehaviour
     void Update()
     {
         Move();
-        if (isNearNPC && Input.GetKey(KeyCode.F))
+        if (isNearQuestBoard && Input.GetKey(KeyCode.F))
         {
             if (TutorialSystem.IsCompleted(TutorialType.Finish))
             {
@@ -89,12 +90,17 @@ public class CharacterConroller2 : MonoBehaviour
         {
             pickupItem = collision.GetComponent<PickupItem>();
         }
+        if (collision.gameObject.CompareTag("QuestBoard"))
+        {
+            isNearQuestBoard = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("NPC")) { isNearNPC = false; }
         if (collision.CompareTag("Shop")) { isNearShop = false; }
+        if (collision.CompareTag("QuestBoard")) { isNearQuestBoard = false; }
         if (collision.CompareTag("item"))
         {
             if (pickupItem != null && pickupItem.gameObject == collision.gameObject)
