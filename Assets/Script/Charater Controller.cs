@@ -11,9 +11,6 @@ public class CharaterController : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private GameObject character;
-    [SerializeField] GameObject[] starImage;
-    [SerializeField] GameObject victoryPanel;
-    [SerializeField] TextMeshProUGUI rewardText;
 
     [Header("Skill Settings")]
     [SerializeField] private float staminaCostPerSecond = 20f;
@@ -22,7 +19,7 @@ public class CharaterController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private PickupItem pickupItem;
-    Timer timer;
+
 
     // Biến trạng thái
     public bool isHidden { get; private set; } = false;
@@ -33,7 +30,7 @@ public class CharaterController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        timer = FindAnyObjectByType<Timer>();
+
 
         originalSpeed = moveSpeed;   // lưu tốc độ ban đầu
     }
@@ -99,10 +96,6 @@ public class CharaterController : MonoBehaviour
         {
             pickupItem = collision.GetComponent<PickupItem>();
         }
-        if (collision.gameObject.CompareTag("Goal"))
-        {
-            Victory();
-        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -152,65 +145,7 @@ public class CharaterController : MonoBehaviour
         spriteRenderer.color = Color.white;
     }
 
-    // =========================
-    // Victory
-    // =========================
-    void Victory()
-    {
-        float timeleft = timer.GetRemainTime();
-        int star = 1;
-        timer.StopTimer();
-
-        if (timeleft > 240)
-        {
-            star = 5;
-        }
-        else if (timeleft > 180)
-        {
-            star = 4;
-        }
-        else if (timeleft > 120)
-        {
-            star = 3;
-        }
-        else if (timeleft > 60)
-        {
-            star = 2;
-        }
-        else if (timeleft > 0)
-        {
-            star = 1;
-        }
-
-        // Hiện sao
-        for (int i = 0; i < star; i++)
-        {
-            if (i < starImage.Length)
-            {
-                starImage[i].SetActive(true);
-            }
-        }
-
-        // Thưởng tiền
-        int reward = star * 50;
-        int currentMoney = PlayerPrefs.GetInt("Money", 0);
-        PlayerPrefs.SetInt("Money", currentMoney + reward);
-        PlayerPrefs.Save();
-
-        rewardText.text = "Your Payment: + " + reward.ToString();
-        victoryPanel.SetActive(true);
-
-        moveSpeed = 0;
-
-        // Lưu sao cao nhất
-        string key = SceneManager.GetActiveScene().name + "_Star";
-        int bestStar = PlayerPrefs.GetInt(key, 0);
-        if (star > bestStar)
-        {
-            PlayerPrefs.SetInt(key, star);
-            PlayerPrefs.Save();
-        }
-    }
+    
     public void Knockback(Vector2 direction, float force, float duration)
     {
         if (isKnockback) return;

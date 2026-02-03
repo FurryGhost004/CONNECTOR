@@ -14,9 +14,11 @@ public class DeliverMessageQuest: QuestData
             if (goalComponent == null)
             {
                 goalComponent = goal.AddComponent<GoalManager>();
+            }
                 goalComponent.Initialize(questManager);
                 goalComponent.SetCompletedAllRequirement(true);
-            }
+                Debug.Log("GoalManager component added to Goal object for DeliverMessageQuest.");
+            
         }
     }
 
@@ -43,7 +45,7 @@ public class DeliverMessageQuest: QuestData
         {
             starRating = 2;
         }
-
+        Debug.Log("Star Rating: " + starRating + ", Time Used: " + timeUsed);
 
         FinishQuest(questManager, starRating, timeUsed);
 

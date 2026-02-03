@@ -12,7 +12,11 @@ public class ButtonManager : MonoBehaviour
     }
     public void Return()
     {
-        SceneManager.LoadScene("Base");
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.currentQuestData = null;
+        }
+        SceneManager.LoadScene("WaittingRoom");
     }
 
     public void CloseQuest()
