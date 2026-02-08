@@ -9,7 +9,15 @@ public class Timer : MonoBehaviour
 
 
     bool isWin = false;
-
+    public void Initialize(float time)
+    {
+        this.remainTime = time;
+        this.isWin = false;
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(false);
+        }
+    }
     public float GetRemainTime()
     {
         return remainTime;

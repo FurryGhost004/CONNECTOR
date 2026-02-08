@@ -236,6 +236,29 @@ public class InventoryManager : MonoBehaviour
 
 
     }
+    public bool HasKeyItem()
+    {
+        foreach (Item item in itemsList)
+        {
+            if (item.type == ItemType.KeyItem)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    public void UseKeyItem()
+    {
+        for (int i = 0; i < itemsList.Count; i++)
+        {
+            if (itemsList[i].type == ItemType.KeyItem)
+            {
+                itemsList.RemoveAt(i);
+                UpdateUI();
+                return;
+            }
+        }
+    }
 
 }
 

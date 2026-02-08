@@ -35,4 +35,18 @@ public class ButtonManager : MonoBehaviour
         {
         shopclose.SetActive(false);
     }
+    public void StartSelectedMission()
+    {
+        if (MiissionButtonManager.SelectedQuest != null)
+        {
+            QuestManager.Instance.StartQuest(
+                MiissionButtonManager.SelectedQuest,
+                MiissionButtonManager.SelectedScene
+            );
+        }
+        else
+        {
+            Debug.LogWarning("No mission selected!");
+        }
+    }
 }
