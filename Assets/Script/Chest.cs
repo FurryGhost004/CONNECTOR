@@ -27,7 +27,7 @@ public class Chest : MonoBehaviour
                 Debug.Log("Chest is locked. You need a key to open it.");
             }
         }
-        else if (!isOpened && playerInRange && !requireKey && Input.GetKeyDown("F"))
+        else if (!isOpened && playerInRange && !requireKey && Input.GetKeyDown(KeyCode.F))
         {
             OpenChest();
         }

@@ -20,10 +20,7 @@ public class EnemySpawner : MonoBehaviour
         enemyCount = data.enemyCount;
         SpawnEnemiesInMap();
     }
-    void Start()
-    {
-        SpawnEnemiesInMap();
-    }
+
 
     void SpawnEnemiesInMap()
     {

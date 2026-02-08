@@ -7,11 +7,9 @@ using static UnityEngine.InputSystem.LowLevel.InputStateHistory;
 public enum QuestType
 {
     DeliverItem,
-    RetrieveItem,
     DeliverMessage,
-    ReceiveMessage,
-    ActivateDevice,
-    DeactivateDevice
+    InteractWithObject,
+
 }
 
 public abstract class QuestData : ScriptableObject

@@ -24,6 +24,7 @@ public class GoalManager : MonoBehaviour
         if (collision.CompareTag("Player") && !isReached)
         {
             isReached = true;
+            Debug.Log("Goal Reached");
             CheckCompletion();
         }
     }
@@ -32,6 +33,7 @@ public class GoalManager : MonoBehaviour
 
         if (isCompletedAllRequirement && isReached)
         {
+            Debug.Log("All Requirements Completed. Quest Goal Achieved!");
             QuestManager.Instance.ReachGoal();
         }
     }

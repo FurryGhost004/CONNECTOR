@@ -21,7 +21,9 @@ public class Item : ScriptableObject
     public ItemType type;
     public GameObject prefab;
     public List<ItemEffect> effects;
+    public List<ConsumableItemEffect> consumableEffects;
     public float destroyTime;
+    public bool isAoE;
     [TextArea]
     public string description;
 

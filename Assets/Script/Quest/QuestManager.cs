@@ -35,12 +35,28 @@ public class QuestManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (scene.name == "WaittingRoom")
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                player.transform.position = new Vector3(-4.8f, -2.6f, 0);
+            }
+            return;
+        }
         if (currentQuestData == null)
         {
             return;
         }
-        ApplyQuestData();
+        StopAllCoroutines();
+        StartCoroutine(DeferredApplyQuestData());
 
+    }
+    IEnumerator DeferredApplyQuestData()
+    {       
+        yield return new WaitForEndOfFrame();
+
+        ApplyQuestData();
     }
     void ApplyQuestData()
     {
@@ -81,7 +97,9 @@ public class QuestManager : MonoBehaviour
 
         foreach (Chest chest in allChests)
         {
-            Item randomItem = currentQuestData.itemsInChest[Random.Range(0, currentQuestData.itemsInChest.Count)];
+            int randomIndex = Random.Range(0, currentQuestData.itemsInChest.Count);
+            Item randomItem = currentQuestData.itemsInChest[randomIndex];
+            if (randomItem == null) continue;
             bool needsKey = Random.Range(0, 2) == 1;
             if (needsKey)
             {
@@ -90,7 +108,16 @@ public class QuestManager : MonoBehaviour
             chest.Initialize(randomItem, needsKey);
         }
         SpawnKeys(lockedChestsCount);
+        if (currentQuestData.goalPrefab != null)
+        {
+            GameObject spawnedGoal = Instantiate(currentQuestData.goalPrefab, currentQuestData.goalSpawnPoint, Quaternion.identity);
 
+
+            spawnedGoal.tag = "Goal";
+
+
+            currentQuestData.ApplyObjectiveBaseOnQuestType(this);
+        }
     }
 
     public void StartQuest(QuestData quest, string sceneName)
@@ -103,6 +130,12 @@ public class QuestManager : MonoBehaviour
     {
         if (currentQuestData.keyPrefab == null || currentQuestData.keySpawnPoints.Count == 0)
         {
+            Debug.LogError("Key Prefab lost");
+            return;
+        }
+        if (currentQuestData.keySpawnPoints == null || currentQuestData.keySpawnPoints.Count == 0)
+        {
+            Debug.LogError("Key Spawn Points empty.");
             return;
         }
         List<Vector3> availablePoints = new List<Vector3>(currentQuestData.keySpawnPoints);
@@ -116,6 +149,7 @@ public class QuestManager : MonoBehaviour
             Vector3 spawnPoint = availablePoints[randomIndex];
             Instantiate(currentQuestData.keyPrefab, spawnPoint, Quaternion.identity);
             availablePoints.RemoveAt(randomIndex);
+            Debug.Log("Key spawn");
 
         }
 
@@ -129,5 +163,6 @@ public class QuestManager : MonoBehaviour
             timer.StopTimer();
         }
         currentQuestData.CalculateStarRating(this);
+
     }
 }

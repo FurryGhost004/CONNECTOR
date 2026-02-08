@@ -129,7 +129,23 @@ public class InventoryManager : MonoBehaviour
     }
     void UseConsumableItem(int index)
     {
-        itemsList.RemoveAt(index);
+        Item item = itemsList[index]; 
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+       
+       
+        if (player == null && item.consumableEffects != null)
+        {
+            foreach (ConsumableItemEffect effect in item.consumableEffects)
+            {
+                if (true)
+                {
+                    effect.ApplyEffect(player);
+                    Debug.Log($"Effect: {effect.effectName} from {item.name}");
+                }
+            }
+        } 
+            
+            itemsList.RemoveAt(index);
         UpdateUI();
     }
 
