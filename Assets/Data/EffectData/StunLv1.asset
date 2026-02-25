@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: StunLv1
   m_EditorClassIdentifier: 
   effectName: Stun
-  duration: 3
+  duration: 10
+  radius: 5
   effectType: 0

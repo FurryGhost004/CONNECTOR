@@ -3,22 +3,24 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DeliverMessageQuest", menuName = "Quests/DeliverMessageQuest")]
 public class DeliverMessageQuest: QuestData
 {
-    bool isGoalReached = false;
+
 
     public override void ApplyObjectiveBaseOnQuestType(QuestManager questManager)
     {
         GameObject goal = GameObject.FindGameObjectWithTag("Goal");
         if (goal != null)
         {
-            GoalManager goalComponent = goal.GetComponent<GoalManager>();
-            if (goalComponent == null)
+            GameObject[] goals = GameObject.FindGameObjectsWithTag("Goal");
+            if (goals.Length>0)
             {
-                goalComponent = goal.AddComponent<GoalManager>();
+                if (GoalManager.Instance != null)
+                {
+                    GoalManager.Instance.Initialize(questManager);
+                    GoalManager.Instance.SetCompletedAllRequirement(true);
+                    Debug.Log($"Đã khởi tạo {goals.Length} Goal cho DeliverMessageQuest.");
+                }
             }
-                goalComponent.Initialize(questManager);
-                goalComponent.SetCompletedAllRequirement(true);
-                Debug.Log("GoalManager component added to Goal object for DeliverMessageQuest.");
-            
+      
         }
     }
 

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Slow LV2
   duration: 7
-  effectType: 0
-  slowMultiplier: 0.5
+  radius: 6
+  effectType: 3
+  slowMultiplier: 0.65

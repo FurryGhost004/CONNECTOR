@@ -13,6 +13,9 @@ TagManager:
   - QuestBoard
   - Chest
   - Darkness
+  - QuestObject
+  - Wall
+  - Ground
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,7 @@ public class QuestManager : MonoBehaviour
 
     [Header("Quest")]
     public QuestData currentQuestData;
+    
 
     private void Awake()
     {
@@ -55,6 +56,7 @@ public class QuestManager : MonoBehaviour
     IEnumerator DeferredApplyQuestData()
     {       
         yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(0.1f);
 
         ApplyQuestData();
     }
@@ -79,10 +81,7 @@ public class QuestManager : MonoBehaviour
         {
             timer.Initialize(currentQuestData.totalTime);
         }
-        if (currentQuestData.goalPrefab != null)
-        {
-            Instantiate(currentQuestData.goalPrefab, currentQuestData.goalSpawnPoint, Quaternion.identity);
-        }
+
         Debug.Log(currentQuestData.questName + " Data Applied");
 
         GameObject darkness = GameObject.FindGameObjectWithTag("Darkness");
@@ -108,13 +107,20 @@ public class QuestManager : MonoBehaviour
             chest.Initialize(randomItem, needsKey);
         }
         SpawnKeys(lockedChestsCount);
-        if (currentQuestData.goalPrefab != null)
+        if (currentQuestData.goalPrefab != null && currentQuestData.goalSpawnPoint != null)
         {
-            GameObject spawnedGoal = Instantiate(currentQuestData.goalPrefab, currentQuestData.goalSpawnPoint, Quaternion.identity);
 
-
-            spawnedGoal.tag = "Goal";
-
+            foreach (Vector3 spawnPos in currentQuestData.goalSpawnPoint)
+            {
+                GameObject spawnedGoal = Instantiate(currentQuestData.goalPrefab, spawnPos, Quaternion.identity);
+                if (spawnedGoal.GetComponent<Goal>() == null)
+                {
+                    spawnedGoal.AddComponent<Goal>();
+                }
+                spawnedGoal.transform.SetParent(null);
+                SceneManager.MoveGameObjectToScene(spawnedGoal, SceneManager.GetActiveScene());
+                Debug.Log("Goal spawn");
+            }
 
             currentQuestData.ApplyObjectiveBaseOnQuestType(this);
         }
@@ -128,18 +134,19 @@ public class QuestManager : MonoBehaviour
 
     void SpawnKeys(int amount)
     {
-        if (currentQuestData.keyPrefab == null || currentQuestData.keySpawnPoints.Count == 0)
-        {
-            Debug.LogError("Key Prefab lost");
-            return;
-        }
         if (currentQuestData.keySpawnPoints == null || currentQuestData.keySpawnPoints.Count == 0)
         {
             Debug.LogError("Key Spawn Points empty.");
             return;
         }
+        if (currentQuestData.keyPrefab == null)
+        {
+            Debug.LogError("Key Prefab is missing!");
+            return;
+        }
         List<Vector3> availablePoints = new List<Vector3>(currentQuestData.keySpawnPoints);
-        for (int i = 0; i < amount; i++)
+        int spawnAmount = Mathf.Min(amount, availablePoints.Count);
+        for (int i = 0; i < spawnAmount; i++)
         {
             if (availablePoints.Count == 0)
             {
@@ -162,6 +169,7 @@ public class QuestManager : MonoBehaviour
         {
             timer.StopTimer();
         }
+        Debug.Log("Goal Reached,StopTime!");
         currentQuestData.CalculateStarRating(this);
 
     }

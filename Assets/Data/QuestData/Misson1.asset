@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efcd1f1ae17cab45a741062f2fd17cb, type: 3}
   m_Name: Misson1
   m_EditorClassIdentifier: Assembly-CSharp::DeliverMessageQuest
-  questType: 0
+  questType: 1
   difficultyLevel: 1
   numberOfKeys: 3
   totalTime: 300
@@ -24,6 +24,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a3419d44a46b38644bc6923c031597fe, type: 2}
   - {fileID: 11400000, guid: 3c8f55e6fcbd8784c9f7ed5a375693de, type: 2}
   - {fileID: 11400000, guid: 65227083d9746fb45b67fbdec9f22c34, type: 2}
+  - {fileID: 11400000, guid: 0d15c82a788ee164e8a4afba23d1e53d, type: 2}
+  - {fileID: 11400000, guid: 96ada7e3746169c44944135235810140, type: 2}
+  - {fileID: 11400000, guid: afea38018aa792f4fb3355b0a0eea511, type: 2}
   enemyCount: 10
   enemyPrefabs:
   - {fileID: 4120047376489393640, guid: f5b635987f123ff44a4360d5ae23d2b4, type: 3}
@@ -32,11 +35,12 @@ MonoBehaviour:
   goalPrefab: {fileID: 6212435355026445604, guid: 5389c4841b01c3440a3047119cb47cd2, type: 3}
   keyPrefab: {fileID: 9181937310886115590, guid: 80968e51efc3dde4aac27be2b16f9b9a, type: 3}
   playerSpawnPoint: {x: 17, y: -17, z: 0}
-  goalSpawnPoint: {x: -28, y: -7, z: 0}
+  goalSpawnPoint:
+  - {x: -28, y: -8.6, z: 0}
   keySpawnPoints:
-  - {x: 1, y: 2, z: 3}
-  - {x: 4, y: 5, z: 6}
-  - {x: 7, y: 8, z: 9}
+  - {x: -2.34, y: -12.11, z: 0}
+  - {x: 4, y: 5, z: 0}
+  - {x: 7, y: 8, z: 0}
   questName: Deliver report
   difficultyDescription: Low Risk
   questDescription: Deliver this casualty and damage report to Ms. Momoko in Sagyou

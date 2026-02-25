@@ -129,7 +129,23 @@ public class InventoryManager : MonoBehaviour
     }
     void UseConsumableItem(int index)
     {
-        itemsList.RemoveAt(index);
+        Item item = itemsList[index]; 
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+       
+       
+        if (player != null && item.consumableEffects != null)
+        {
+            foreach (ConsumableItemEffect effect in item.consumableEffects)
+            {
+                if (true)
+                {
+                    effect.ApplyEffect(player);
+                    Debug.Log($"Effect: {effect.effectName} from {item.name}");
+                }
+            }
+        } 
+            
+            itemsList.RemoveAt(index);
         UpdateUI();
     }
 
@@ -157,6 +173,18 @@ public class InventoryManager : MonoBehaviour
 
     void ThrowItem(Item item, float force, float chargeDuration)
     {
+        if (playerPos == null)
+        {
+            GameObject p = GameObject.FindGameObjectWithTag("Player");
+            if (p != null) playerPos = p.transform;
+            else
+            {
+                Debug.LogError("Can't detect Player!");
+                return;
+            }
+        }
+        if (Camera.main == null) Debug.LogError("Camera null");
+        if (playerPos == null) Debug.LogWarning("Player null");
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0;
         Vector2 dir = (mousePos - playerPos.position).normalized;
@@ -256,6 +284,27 @@ public class InventoryManager : MonoBehaviour
                 itemsList.RemoveAt(i);
                 UpdateUI();
                 return;
+            }
+        }
+    }
+    public bool HasQuestItem()
+    {
+        foreach (Item item in itemsList)
+        {
+            if (item.type == ItemType.QuestItem) return true;
+        }
+        return false;
+    }
+
+    public void UseQuestItem()
+    {
+        for (int i = 0; i < itemsList.Count; i++)
+        {
+            if (itemsList[i].type == ItemType.QuestItem)
+            {
+                itemsList.RemoveAt(i);
+                UpdateUI();
+                return; 
             }
         }
     }

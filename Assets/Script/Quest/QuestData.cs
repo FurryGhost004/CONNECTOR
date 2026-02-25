@@ -7,11 +7,9 @@ using static UnityEngine.InputSystem.LowLevel.InputStateHistory;
 public enum QuestType
 {
     DeliverItem,
-    RetrieveItem,
     DeliverMessage,
-    ReceiveMessage,
-    ActivateDevice,
-    DeactivateDevice
+    InteractWithObject,
+
 }
 
 public abstract class QuestData : ScriptableObject
@@ -26,6 +24,7 @@ public abstract class QuestData : ScriptableObject
     public int rewardPerStar;
     public bool hasDarkness;
     public List<Item> itemsInChest;
+    public GameObject minigamePrefab;
 
     [Header("Spawn Settings")]
     public int enemyCount;
@@ -33,7 +32,7 @@ public abstract class QuestData : ScriptableObject
     public GameObject goalPrefab;
     public GameObject keyPrefab;
     public Vector3 playerSpawnPoint;
-    public Vector3 goalSpawnPoint;
+    public List<Vector3> goalSpawnPoint;
     public List<Vector3> keySpawnPoints;
 
     [Header("Quest Description")]

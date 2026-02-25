@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c919b323e2971f44d9dfaa60008a047f, type: 3}
+  m_Name: HeallLv2
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  id: 11
+  name: Blister pack
+  level: 2
+  price: 100
+  icon: {fileID: 8102358098348255977, guid: 22e8241211d0cb949ba53c94db3136d6, type: 3}
+  type: 2
+  prefab: {fileID: 1182467385138018184, guid: f635ea9f7a9dc9d469b94faab80df97f, type: 3}
+  effects: []
+  consumableEffects:
+  - {fileID: 11400000, guid: be7cab1bade0cf54fbd866b85a3d6fce, type: 2}
+  destroyTime: 0
+  isAoE: 0
+  description: '"A full pack of medicine smuggled through enemy lines. Civilians
+    risk their lives to get it to us."'

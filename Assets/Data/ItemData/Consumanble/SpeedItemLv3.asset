@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c919b323e2971f44d9dfaa60008a047f, type: 3}
+  m_Name: SpeedItemLv3
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  id: 15
+  name: Last Breath Injection
+  level: 3
+  price: 300
+  icon: {fileID: 4130640169021434097, guid: 5b1810e289e641548859d6366d651250, type: 3}
+  type: 2
+  prefab: {fileID: 3469250709810481425, guid: 8c8be0d3b8826314c8df8dca3a143c06, type: 3}
+  effects: []
+  consumableEffects:
+  - {fileID: 11400000, guid: 0494770cc99b7ef46938caa0cab31de2, type: 2}
+  destroyTime: 0
+  isAoE: 0
+  description: "\"It will tear your muscles and crush your bones under unbearable
+    pressure. Once you inject it\u2026 there is no return.\"\""

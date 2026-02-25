@@ -258,4 +258,31 @@ public class HealthSystem : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         targetHealthValue = currentHealth;
     }
+    public void RestoreEnergy(float amount)
+    {
+        currentStamina += amount;
+        currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
+        targetStaminaValue = currentStamina;
+    }
+
+    public void StartRecoverHealth(float healAmount, float duration)
+    {
+        StartCoroutine(RecoverHealthOverTime(healAmount, duration));
+    }
+    IEnumerator RecoverHealthOverTime(float healAmount, float duration)
+    {
+        float amountPerSecond = healAmount / duration;
+        float timer = 0f;
+        while (timer < duration)
+        {
+            if (currentHealth < maxHealth)
+            {
+                Heal(amountPerSecond * Time.deltaTime);
+            }
+            timer += Time.deltaTime;
+            yield return null;
+        }
+        Debug.Log($"Heal {amountPerSecond} HP.");
+    }
+
 }

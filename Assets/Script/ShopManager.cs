@@ -59,9 +59,19 @@ public class ShopManager : MonoBehaviour
 
     public void LoadRandomShop()
     {
+        int unlockedLevel = PlayerPrefs.GetInt("CurrentMaxLevel", 1);
         List<Item> items = new List<Item>(itemsPool);
 
-        int count = Mathf.Min(6, items.Count);
+
+        foreach (var item in itemsPool)
+        {
+            if (item.level <= unlockedLevel)
+            {
+                items.Add(item);
+            }
+        }
+
+        int count = Mathf.Min(shopsSlots.Length, items.Count);
 
         for (int i = 0; i < count; i++)
         {

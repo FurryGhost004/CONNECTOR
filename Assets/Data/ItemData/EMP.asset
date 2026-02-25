@@ -21,5 +21,7 @@ MonoBehaviour:
   prefab: {fileID: 3068970925773152584, guid: 1926a6327f4afe942afffa9a2c46e503, type: 3}
   effects:
   - {fileID: 11400000, guid: 6b40ff7db403eec4a92677e6f419ebe6, type: 2}
+  consumableEffects: []
   destroyTime: 0
+  isAoE: 1
   description: Stun enemy that step on it

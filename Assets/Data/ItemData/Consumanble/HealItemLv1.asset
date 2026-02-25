@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c919b323e2971f44d9dfaa60008a047f, type: 3}
+  m_Name: HealItemLv1
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  id: 8
+  name: Tablet
+  level: 1
+  price: 50
+  icon: {fileID: 332710217683260096, guid: 729ed3a659d8520419e1324898356e25, type: 3}
+  type: 2
+  prefab: {fileID: 3210911085677151028, guid: ea2bc352dbaa45a4c9b17ced210c27c1, type: 3}
+  effects: []
+  consumableEffects:
+  - {fileID: 11400000, guid: 8d738069567376e4d96bd335090a7260, type: 2}
+  destroyTime: 0
+  isAoE: 0
+  description: "Heal over time-\"A discarded medicine tablet scavenged from a dump.
+    Likely expired \u2014 but survival doesn\u2019t wait.\""

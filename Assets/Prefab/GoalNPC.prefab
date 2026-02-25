@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6309867381923843536}
   - component: {fileID: 3202828123870944756}
   - component: {fileID: 5263959502034159675}
-  - component: {fileID: -3634526822627555269}
+  - component: {fileID: -1950559110361385625}
   m_Layer: 0
   m_Name: GoalNPC
   m_TagString: Goal
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 88a0fe9226708dd4abedb3d49fb1cb9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -176,7 +176,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8636364, y: 1.5909091}
   m_EdgeRadius: 0
---- !u!114 &-3634526822627555269
+--- !u!114 &-1950559110361385625
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,6 +185,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6212435355026445604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24e41951815368d4b8ca7ed1c30d9388, type: 3}
+  m_Script: {fileID: 11500000, guid: 478728028f07a014c87bdf0fd2b40a8f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GoalManager
+  m_EditorClassIdentifier: Assembly-CSharp::Goal

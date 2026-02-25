@@ -24,6 +24,7 @@ public class CharaterController : MonoBehaviour
     // Biến trạng thái
     public bool isHidden { get; private set; } = false;
     private bool isKnockback;
+    private bool isBoosting = false;
 
     void Start()
     {
@@ -164,6 +165,26 @@ public class CharaterController : MonoBehaviour
         isKnockback = false;
     }
 
+    public void ApplySpeedBoost(float speedMultiplier, float duration)
+    {
+        if (!isBoosting)
+        {
+            StartCoroutine(SpeedBoostRoutine(speedMultiplier, duration));
+        }
+
+    }
+    IEnumerator SpeedBoostRoutine(float speedMultiplier, float duration)
+    {
+           
+            isBoosting = true;
+            float speedbefore = originalSpeed;
+            originalSpeed *= (1 + speedMultiplier);
+            moveSpeed = originalSpeed;
+            yield return new WaitForSeconds(duration);
+            originalSpeed = speedbefore;
+            moveSpeed = originalSpeed;
+            isBoosting = false;
+    }
 
 
 }

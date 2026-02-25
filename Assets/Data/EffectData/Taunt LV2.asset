@@ -15,5 +15,5 @@ MonoBehaviour:
   effectName: Taunt LV2
   duration: 5
   radius: 5
-  effectType: 0
+  effectType: 1
   Radius: 5

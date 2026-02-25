@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Slow
   duration: 5
+  radius: 5
   effectType: 3
   slowMultiplier: 0.5
