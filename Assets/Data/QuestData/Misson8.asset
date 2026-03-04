@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aeba2f1d57d3a04dae2471df6c2d1c8, type: 3}
+  m_Name: Misson8
+  m_EditorClassIdentifier: Assembly-CSharp::InteractWithObject
+  questType: 2
+  difficultyLevel: 2
+  numberOfKeys: 7
+  totalTime: 300
+  rewardPerStar: 130
+  hasDarkness: 1
+  itemsInChest:
+  - {fileID: 11400000, guid: 5f09d7d6f04464b4bad3ab8330830abe, type: 2}
+  - {fileID: 11400000, guid: 488d73bad94385342ad95a49e8feb58f, type: 2}
+  - {fileID: 11400000, guid: 4dfeb61f167d03848901af9c2a8e3826, type: 2}
+  - {fileID: 11400000, guid: e65cc0f54201e284d99a8443c3180e05, type: 2}
+  - {fileID: 11400000, guid: 8790d120841347a48a403158fd9b9591, type: 2}
+  - {fileID: 11400000, guid: 15cda4414d0dcca4ca4d10d6e3ddbbc8, type: 2}
+  - {fileID: 11400000, guid: 837f1251309d79848aacfada776874ac, type: 2}
+  minigamePrefab: {fileID: 6924538647262804153, guid: 3ac22d83e775cdc4da11fe3d373b51c2, type: 3}
+  enemyCount: 30
+  enemyPrefabs:
+  - {fileID: 4120047376489393640, guid: f5b635987f123ff44a4360d5ae23d2b4, type: 3}
+  goalPrefab: {fileID: 3263392964720760991, guid: 3447d74bda0276640a90200117104e2f, type: 3}
+  keyPrefab: {fileID: 9181937310886115590, guid: 80968e51efc3dde4aac27be2b16f9b9a, type: 3}
+  playerSpawnPoint: {x: 33, y: -6, z: 0}
+  goalSpawnPoint:
+  - {x: 0, y: 0, z: -12}
+  keySpawnPoints:
+  - {x: 21, y: 13, z: 0}
+  - {x: 35, y: 0, z: 0}
+  - {x: 55, y: 17, z: 0}
+  - {x: 85, y: 8, z: 0}
+  - {x: 69, y: 21, z: 0}
+  - {x: 111, y: 13, z: 0}
+  - {x: 120, y: 3, z: 0}
+  questName: Fix the port' power station
+  difficultyDescription: Medium Risk
+  completionDialogue: {fileID: 11400000, guid: bf0cc8798aea060419db740cebabef22, type: 2}
+  missionIndex: 8
+  questDescription: One station at the adjacent bridge other at the north next to
+    beer shop
+  objectsToInteractPrefab:
+  - {fileID: 1273478879328420000, guid: df3eef24bccbc4f409e688992955b44b, type: 3}
+  - {fileID: 1273478879328420000, guid: df3eef24bccbc4f409e688992955b44b, type: 3}
+  objectsToInteractSpawnPoints:
+  - {x: 89, y: -3, z: 0}
+  - {x: 68, y: 21, z: 0}

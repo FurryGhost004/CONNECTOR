@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c919b323e2971f44d9dfaa60008a047f, type: 3}
+  m_Name: String Bundle
+  m_EditorClassIdentifier: 
+  id: 7
+  name: String Bundle
+  level: 2
+  price: 100
+  icon: {fileID: -9078083965982080153, guid: cea8efebb3094424d928874d1d7bcc16, type: 3}
+  type: 1
+  prefab: {fileID: 2273891890891682227, guid: 440b2054afdd597488e8d32fda3c6a2c, type: 3}
+  effects:
+  - {fileID: 11400000, guid: 18d0ef5e4d8ef5042a55ff03e87e3e93, type: 2}
+  consumableEffects: []
+  destroyTime: 0
+  isAoE: 0
+  useSound: {fileID: 0}
+  triggerSound: {fileID: 0}
+  useAnimationTrigger: 
+  triggerAnimationTrigger: 
+  consumableDuration: 0
+  description: Slow enemy down

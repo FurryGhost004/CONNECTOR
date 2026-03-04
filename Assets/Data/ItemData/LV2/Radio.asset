@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c919b323e2971f44d9dfaa60008a047f, type: 3}
+  m_Name: Radio
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  id: 16
+  name: Radio
+  level: 2
+  price: 250
+  icon: {fileID: -441451673, guid: ba1c9a3cc35553843b78fecf36ea81c2, type: 3}
+  type: 1
+  prefab: {fileID: 5580891448050964451, guid: 4538d35c47feef749bf2268f66e58019, type: 3}
+  effects:
+  - {fileID: 11400000, guid: 3c85bb1d968a97d49a0965e64c1a31a6, type: 2}
+  consumableEffects: []
+  destroyTime: 0
+  isAoE: 1
+  useSound: {fileID: 0}
+  triggerSound: {fileID: 0}
+  useAnimationTrigger: 
+  triggerAnimationTrigger: 
+  consumableDuration: 0
+  description: Taunt enemy

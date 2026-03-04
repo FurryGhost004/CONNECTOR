@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851f46a6b0eb62f44ba59639a77f1694, type: 3}
+  m_Name: Misson7
+  m_EditorClassIdentifier: Assembly-CSharp::DeliverItemQuest
+  questType: 0
+  difficultyLevel: 2
+  numberOfKeys: 7
+  totalTime: 300
+  rewardPerStar: 120
+  hasDarkness: 1
+  itemsInChest:
+  - {fileID: 11400000, guid: 5f09d7d6f04464b4bad3ab8330830abe, type: 2}
+  - {fileID: 11400000, guid: 488d73bad94385342ad95a49e8feb58f, type: 2}
+  - {fileID: 11400000, guid: 4dfeb61f167d03848901af9c2a8e3826, type: 2}
+  - {fileID: 11400000, guid: e65cc0f54201e284d99a8443c3180e05, type: 2}
+  - {fileID: 11400000, guid: 8790d120841347a48a403158fd9b9591, type: 2}
+  - {fileID: 11400000, guid: 15cda4414d0dcca4ca4d10d6e3ddbbc8, type: 2}
+  - {fileID: 11400000, guid: 837f1251309d79848aacfada776874ac, type: 2}
+  minigamePrefab: {fileID: 0}
+  enemyCount: 25
+  enemyPrefabs:
+  - {fileID: 807893492026878213, guid: 2a7a86dbf8c6cd84bba891ca9879d929, type: 3}
+  goalPrefab: {fileID: 8731495514440818571, guid: ff34a5301c9096049ba71785815269d3, type: 3}
+  keyPrefab: {fileID: 9181937310886115590, guid: 80968e51efc3dde4aac27be2b16f9b9a, type: 3}
+  playerSpawnPoint: {x: -19, y: -22, z: 0}
+  goalSpawnPoint:
+  - {x: -32, y: 2, z: 0}
+  - {x: 5, y: 8, z: 0}
+  keySpawnPoints:
+  - {x: 16, y: -22, z: 0}
+  - {x: -6, y: -14, z: 0}
+  - {x: -29, y: -15, z: 0}
+  - {x: -13, y: -2, z: 0}
+  - {x: -35, y: 23, z: 0}
+  - {x: 14.5, y: -3.5, z: 0}
+  - {x: -31, y: -11, z: 0}
+  questName: Supply material
+  difficultyDescription: Medium Risk
+  completionDialogue: {fileID: 11400000, guid: 15cd77d169166704faaf53fda2d93bf0, type: 2}
+  missionIndex: 7
+  questDescription: The receiver on in the west one at the north east
+  keyItemAmount: 2
+  itemsToDeliver:
+  - {fileID: 11400000, guid: 8c23c2adb4d43ec4bbbec849ba873927, type: 2}
+  - {fileID: 11400000, guid: 8c23c2adb4d43ec4bbbec849ba873927, type: 2}

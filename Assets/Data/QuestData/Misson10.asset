@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efcd1f1ae17cab45a741062f2fd17cb, type: 3}
+  m_Name: Misson10
+  m_EditorClassIdentifier: Assembly-CSharp::DeliverMessageQuest
+  questType: 1
+  difficultyLevel: 2
+  numberOfKeys: 7
+  totalTime: 300
+  rewardPerStar: 150
+  hasDarkness: 1
+  itemsInChest:
+  - {fileID: 11400000, guid: 5f09d7d6f04464b4bad3ab8330830abe, type: 2}
+  - {fileID: 11400000, guid: 488d73bad94385342ad95a49e8feb58f, type: 2}
+  - {fileID: 11400000, guid: 4dfeb61f167d03848901af9c2a8e3826, type: 2}
+  - {fileID: 11400000, guid: e65cc0f54201e284d99a8443c3180e05, type: 2}
+  - {fileID: 11400000, guid: 8790d120841347a48a403158fd9b9591, type: 2}
+  - {fileID: 11400000, guid: 15cda4414d0dcca4ca4d10d6e3ddbbc8, type: 2}
+  - {fileID: 11400000, guid: 837f1251309d79848aacfada776874ac, type: 2}
+  minigamePrefab: {fileID: 0}
+  enemyCount: 35
+  enemyPrefabs:
+  - {fileID: 2170286989037563908, guid: 0593acf2d4008224fb84321d3b4933b5, type: 3}
+  - {fileID: 4011226758526767357, guid: 44cfc7be0c01b7041b35778b30b0d900, type: 3}
+  goalPrefab: {fileID: 8731495514440818571, guid: ff34a5301c9096049ba71785815269d3, type: 3}
+  keyPrefab: {fileID: 9181937310886115590, guid: 80968e51efc3dde4aac27be2b16f9b9a, type: 3}
+  playerSpawnPoint: {x: 17, y: -17, z: 0}
+  goalSpawnPoint:
+  - {x: 17, y: 26, z: 0}
+  keySpawnPoints:
+  - {x: -2.34, y: -12.11, z: 0}
+  - {x: 17, y: -10.5, z: 0}
+  - {x: -21.5, y: -9.8, z: 0}
+  - {x: -28, y: -17, z: 0}
+  - {x: -5.5, y: -2.5, z: 0}
+  - {x: -3.9, y: 26, z: 0}
+  - {x: 4, y: 2, z: 0}
+  questName: The planbegin
+  difficultyDescription: Medium Risk
+  completionDialogue: {fileID: 11400000, guid: ea686b0e98821da44980f5dcd2e2c12c, type: 2}
+  missionIndex: 10
+  questDescription: The receiver at the conner of North east

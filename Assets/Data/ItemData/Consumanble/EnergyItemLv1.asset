@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c919b323e2971f44d9dfaa60008a047f, type: 3}
+  m_Name: EnergyItemLv1
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  id: 9
+  name: Weak Battery
+  level: 1
+  price: 25
+  icon: {fileID: -262287609, guid: ae1c857d414a8564bbeaabf5918556d1, type: 3}
+  type: 2
+  prefab: {fileID: 2103690865284703306, guid: 7feb9080ecac00a4ba8b5ca7162bef1e, type: 3}
+  effects: []
+  consumableEffects:
+  - {fileID: 11400000, guid: d10dcad01ef6c4a449bb71f51c462762, type: 2}
+  destroyTime: 0
+  isAoE: 0
+  description: Restore energy-"A worn-out battery with a little charge remaining.
+    Not much, but better than nothing."

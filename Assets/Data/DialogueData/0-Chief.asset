@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db5d0f3ae819ee448ada59abd31955d, type: 3}
+  m_Name: 0-Chief
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeeData
+  lines:
+  - charaterName: Shiranui Genji
+    charaterPortrait: {fileID: 7575064079233754996, guid: ee9ce335603791b41af4751c33ab56d7, type: 3}
+    content: '"Is everything alright?"'
+  - charaterName: Kageyama Rei
+    charaterPortrait: {fileID: 5954461964394930157, guid: f79b7f0c3d0104b45812246df264f385, type: 3}
+    content: '"Yeah! Seem so."'
+  - charaterName: Shiranui Genji
+    charaterPortrait: {fileID: 7575064079233754996, guid: ee9ce335603791b41af4751c33ab56d7, type: 3}
+    content: '"You know why we broke you out of that prison, don''t you?" '
+  - charaterName: Kageyama Rei
+    charaterPortrait: {fileID: 5954461964394930157, guid: f79b7f0c3d0104b45812246df264f385, type: 3}
+    content: "\"...Yes! But what do you want from me? I understand the machines\u2026
+      but I'm no soldier.\" "
+  - charaterName: Shiranui Genji
+    charaterPortrait: {fileID: 7575064079233754996, guid: ee9ce335603791b41af4751c33ab56d7, type: 3}
+    content: '"So do we. No one can fight the machines alone. That''s why we fight
+      as one." '
+  - charaterName: Shiranui Genji
+    charaterPortrait: {fileID: 7575064079233754996, guid: ee9ce335603791b41af4751c33ab56d7, type: 3}
+    content: '"Armies win battles. Information wins wars."'
+  - charaterName: Shiranui Genji
+    charaterPortrait: {fileID: 7575064079233754996, guid: ee9ce335603791b41af4751c33ab56d7, type: 3}
+    content: '"We''ve buried too many for it already, therefore  i need you to be
+      our courier." '
+  - charaterName: Kageyama Rei
+    charaterPortrait: {fileID: 5954461964394930157, guid: f79b7f0c3d0104b45812246df264f385, type: 3}
+    content: '"I see,so what should i do now?." '
+  - charaterName: Shiranui Genji
+    charaterPortrait: {fileID: 7575064079233754996, guid: ee9ce335603791b41af4751c33ab56d7, type: 3}
+    content: '"We''ll begin with something simple.." '
+  - charaterName: Shiranui Genji
+    charaterPortrait: {fileID: 7575064079233754996, guid: ee9ce335603791b41af4751c33ab56d7, type: 3}
+    content: '"Momoko''s forces paid the highest price to get you out.." '
+  - charaterName: Shiranui Genji
+    charaterPortrait: {fileID: 7575064079233754996, guid: ee9ce335603791b41af4751c33ab56d7, type: 3}
+    content: '"Go to Sagyou City.Bring her this casualty report and give her a thank." '
+  - charaterName: Kageyama Rei
+    charaterPortrait: {fileID: 5954461964394930157, guid: f79b7f0c3d0104b45812246df264f385, type: 3}
+    content: '"Roger!." '
+  - charaterName: Shiranui Genji
+    charaterPortrait: {fileID: 7575064079233754996, guid: ee9ce335603791b41af4751c33ab56d7, type: 3}
+    content: '"You can take a look at the map at the shelf over there." '

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db5d0f3ae819ee448ada59abd31955d, type: 3}
+  m_Name: 2.Yamada
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeeData
+  lines:
+  - charaterName: Yamada
+    charaterPortrait: {fileID: -2731085992964166111, guid: cdf1f461060dd0644be62deaac078797, type: 3}
+    content: '"Ah, Mr. Courier. You brought the goods?"'
+  - charaterName: Kageyama Rei
+    charaterPortrait: {fileID: 5954461964394930157, guid: f79b7f0c3d0104b45812246df264f385, type: 3}
+    content: '"Yep! Here are your cigarettes and candy."'
+  - charaterName: Yamada
+    charaterPortrait: {fileID: -2731085992964166111, guid: cdf1f461060dd0644be62deaac078797, type: 3}
+    content: "\"Ah, this sweetness\u2026 how I've missed you.\""
+  - charaterName: Yamada
+    charaterPortrait: {fileID: -2731085992964166111, guid: cdf1f461060dd0644be62deaac078797, type: 3}
+    content: '"By the way, I heard you used to be a data engineer for those robots,
+      right?"'
+  - charaterName: Yamada
+    charaterPortrait: {fileID: -2731085992964166111, guid: cdf1f461060dd0644be62deaac078797, type: 3}
+    content: '"What the hell did you even teach them?"'
+  - charaterName: Yamada
+    charaterPortrait: {fileID: -2731085992964166111, guid: cdf1f461060dd0644be62deaac078797, type: 3}
+    content: "\"I get banning cigarettes\u2026 but candy? What\u2019s wrong with
+      candy?\""
+  - charaterName: Yamada
+    charaterPortrait: {fileID: -2731085992964166111, guid: cdf1f461060dd0644be62deaac078797, type: 3}
+    content: '"I can''t believe we live in a time where we have to smuggle sweets
+      just because some machines decided it''s ''unhealthy.''"'
+  - charaterName: Kageyama Rei
+    charaterPortrait: {fileID: 5954461964394930157, guid: f79b7f0c3d0104b45812246df264f385, type: 3}
+    content: '"....I''m truly sorry"'
+  - charaterName: Yamada
+    charaterPortrait: {fileID: -2731085992964166111, guid: cdf1f461060dd0644be62deaac078797, type: 3}
+    content: '"Wait, I nearly forgot can you deliver this letter to Tanaka in Shinsei
+      City please"'

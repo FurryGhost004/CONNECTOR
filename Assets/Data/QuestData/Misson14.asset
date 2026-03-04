@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aeba2f1d57d3a04dae2471df6c2d1c8, type: 3}
+  m_Name: Misson14
+  m_EditorClassIdentifier: Assembly-CSharp::InteractWithObject
+  questType: 2
+  difficultyLevel: 3
+  numberOfKeys: 7
+  totalTime: 360
+  rewardPerStar: 250
+  hasDarkness: 1
+  itemsInChest:
+  - {fileID: 11400000, guid: f20c2e22a3f5a2046beddf92631a05d4, type: 2}
+  - {fileID: 11400000, guid: 8b762ee40c4868a428f1ba46cfdc76ca, type: 2}
+  - {fileID: 11400000, guid: f040469913b59f84d8159717908ffa65, type: 2}
+  - {fileID: 11400000, guid: dd249d9ecddffcd4bb2c1fbb44dedcaa, type: 2}
+  - {fileID: 11400000, guid: a97065e099299ab46a51edce9f3ed9ba, type: 2}
+  - {fileID: 11400000, guid: 64aa3ad90a1690042aab3a1ec28e2bf3, type: 2}
+  minigamePrefab: {fileID: 6924538647262804153, guid: 3ac22d83e775cdc4da11fe3d373b51c2, type: 3}
+  enemyCount: 40
+  enemyPrefabs:
+  - {fileID: 4120047376489393640, guid: f5b635987f123ff44a4360d5ae23d2b4, type: 3}
+  - {fileID: 4011226758526767357, guid: 44cfc7be0c01b7041b35778b30b0d900, type: 3}
+  - {fileID: 807893492026878213, guid: 2a7a86dbf8c6cd84bba891ca9879d929, type: 3}
+  goalPrefab: {fileID: 3263392964720760991, guid: 3447d74bda0276640a90200117104e2f, type: 3}
+  keyPrefab: {fileID: 9181937310886115590, guid: 80968e51efc3dde4aac27be2b16f9b9a, type: 3}
+  playerSpawnPoint: {x: 33, y: -6, z: 0}
+  goalSpawnPoint:
+  - {x: 0, y: 0, z: -10}
+  keySpawnPoints:
+  - {x: 21, y: 13, z: 0}
+  - {x: 35, y: 0, z: 0}
+  - {x: 55, y: 17, z: 0}
+  - {x: 85, y: 8, z: 0}
+  - {x: 69, y: 21, z: 0}
+  - {x: 111, y: 13, z: 0}
+  - {x: 120, y: 3, z: 0}
+  questName: Make the source overload
+  difficultyDescription: High Risk
+  completionDialogue: {fileID: 11400000, guid: 5c23ebc34c85cab4e8deb6ed431e784c, type: 2}
+  missionIndex: 14
+  questDescription: 'the 2 stations at the end of alley in the west other 2 are at
+    the square and the coner of east both near beer store '
+  objectsToInteractPrefab:
+  - {fileID: 1273478879328420000, guid: df3eef24bccbc4f409e688992955b44b, type: 3}
+  - {fileID: 1273478879328420000, guid: df3eef24bccbc4f409e688992955b44b, type: 3}
+  - {fileID: 1273478879328420000, guid: df3eef24bccbc4f409e688992955b44b, type: 3}
+  - {fileID: 1273478879328420000, guid: df3eef24bccbc4f409e688992955b44b, type: 3}
+  objectsToInteractSpawnPoints:
+  - {x: 22, y: 13, z: 0}
+  - {x: 22, y: 20, z: 0}
+  - {x: 107, y: 20, z: 0}
+  - {x: 120, y: 13, z: 0}

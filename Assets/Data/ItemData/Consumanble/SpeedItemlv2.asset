@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c919b323e2971f44d9dfaa60008a047f, type: 3}
+  m_Name: SpeedItemlv2
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  id: 14
+  name: Limitbreak liquid
+  level: 2
+  price: 150
+  icon: {fileID: -5622901713081898559, guid: 5e3457a2dd348434cb26e354219a792f, type: 3}
+  type: 2
+  prefab: {fileID: 8574362079219182521, guid: 92ad16fd79958c54687a4c646b117414, type: 3}
+  effects: []
+  consumableEffects:
+  - {fileID: 11400000, guid: d289e4f06efd51e4fa29bcd740a68c1b, type: 2}
+  destroyTime: 0
+  isAoE: 0
+  useSound: {fileID: 0}
+  triggerSound: {fileID: 0}
+  useAnimationTrigger: 
+  triggerAnimationTrigger: 
+  consumableDuration: 0
+  description: Temporarily increase your speed

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db5d0f3ae819ee448ada59abd31955d, type: 3}
+  m_Name: ThrowTutorial
+  m_EditorClassIdentifier: 
+  lines:
+  - charaterName: Kageyama Rei
+    charaterPortrait: {fileID: 5954461964394930157, guid: f79b7f0c3d0104b45812246df264f385, type: 3}
+    content: "\u201CWho even left this banana here? Someone could step on it and
+      slip.\u201D"
+  - charaterName: Takeda
+    charaterPortrait: {fileID: 21300000, guid: 43af21ed129bb4f41872e52757709ecd, type: 3}
+    content: "\u201CIt\u2019s probably the Doc\u2019s banana. After your rescue,
+      a lot of people were wounded, so he left it in a hurry.\u201D"
+  - charaterName: Kageyama Rei
+    charaterPortrait: {fileID: 5954461964394930157, guid: f79b7f0c3d0104b45812246df264f385, type: 3}
+    content: "\u201COh,i... i see.\u201D"
+  - charaterName: Takeda
+    charaterPortrait: {fileID: 21300000, guid: 43af21ed129bb4f41872e52757709ecd, type: 3}
+    content: "\u201CDon't need to feel guity about it, it's our decision.\u201D"
+  - charaterName: Takeda
+    charaterPortrait: {fileID: 21300000, guid: 43af21ed129bb4f41872e52757709ecd, type: 3}
+    content: "\u201CAnyway, let's check on your shouder, pick the rock over there
+      and try to throw it.\u201D"

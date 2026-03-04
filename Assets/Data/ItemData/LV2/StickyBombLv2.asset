@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c919b323e2971f44d9dfaa60008a047f, type: 3}
+  m_Name: StickyBombLv2
+  m_EditorClassIdentifier: 
+  id: 6
+  name: Sticky Bomb Lv2
+  level: 2
+  price: 220
+  icon: {fileID: 1963835018, guid: ae1c857d414a8564bbeaabf5918556d1, type: 3}
+  type: 0
+  prefab: {fileID: 1744267276431006508, guid: 7b066f1c62cbcf04aa271cbb69c0f8a6, type: 3}
+  effects:
+  - {fileID: 11400000, guid: d2579f370ee5557409f2c688d3c05038, type: 2}
+  - {fileID: 11400000, guid: 18d0ef5e4d8ef5042a55ff03e87e3e93, type: 2}
+  consumableEffects: []
+  destroyTime: 10
+  isAoE: 0
+  useSound: {fileID: 0}
+  triggerSound: {fileID: 0}
+  useAnimationTrigger: 
+  triggerAnimationTrigger: 
+  consumableDuration: 0
+  description: 'Throw to Stun and slow enemy '

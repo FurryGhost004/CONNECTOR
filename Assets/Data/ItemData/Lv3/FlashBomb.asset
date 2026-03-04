@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c919b323e2971f44d9dfaa60008a047f, type: 3}
+  m_Name: FlashBomb
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  id: 20
+  name: Flash Bomb
+  level: 3
+  price: 300
+  icon: {fileID: 2104432408, guid: 8e4e86a70d6dcb547a59f53781bcfde8, type: 3}
+  type: 0
+  prefab: {fileID: 5510532616798328951, guid: 366cf36867def6c439c128cfdfe90df7, type: 3}
+  effects:
+  - {fileID: 11400000, guid: 0e53961ecd57860498f88312c862baf4, type: 2}
+  consumableEffects: []
+  destroyTime: 0
+  isAoE: 0
+  useSound: {fileID: 0}
+  triggerSound: {fileID: 0}
+  useAnimationTrigger: 
+  triggerAnimationTrigger: 
+  consumableDuration: 0
+  description: Slow enemy

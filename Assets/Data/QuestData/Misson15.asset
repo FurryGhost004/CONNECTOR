@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efcd1f1ae17cab45a741062f2fd17cb, type: 3}
+  m_Name: Misson15
+  m_EditorClassIdentifier: Assembly-CSharp::DeliverMessageQuest
+  questType: 1
+  difficultyLevel: 3
+  numberOfKeys: 1
+  totalTime: 360
+  rewardPerStar: 1500
+  hasDarkness: 0
+  itemsInChest:
+  - {fileID: 11400000, guid: 3c8f55e6fcbd8784c9f7ed5a375693de, type: 2}
+  minigamePrefab: {fileID: 6924538647262804153, guid: 3ac22d83e775cdc4da11fe3d373b51c2, type: 3}
+  enemyCount: 0
+  enemyPrefabs:
+  - {fileID: 4011226758526767357, guid: 44cfc7be0c01b7041b35778b30b0d900, type: 3}
+  goalPrefab: {fileID: 3363497523106159236, guid: d210f4be77e22a04d91a0eeb7cf180eb, type: 3}
+  keyPrefab: {fileID: 9181937310886115590, guid: 80968e51efc3dde4aac27be2b16f9b9a, type: 3}
+  playerSpawnPoint: {x: 17, y: -37, z: 0}
+  goalSpawnPoint:
+  - {x: 46, y: 4, z: 0}
+  keySpawnPoints:
+  - {x: -37.48714, y: -33, z: 0}
+  questName: Final Battle
+  difficultyDescription: Insane
+  completionDialogue: {fileID: 0}
+  missionIndex: 15
+  questDescription: Turn off the machine in four room to defeat boss

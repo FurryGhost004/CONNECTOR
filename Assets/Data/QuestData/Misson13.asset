@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efcd1f1ae17cab45a741062f2fd17cb, type: 3}
+  m_Name: Misson13
+  m_EditorClassIdentifier: Assembly-CSharp::DeliverMessageQuest
+  questType: 1
+  difficultyLevel: 3
+  numberOfKeys: 7
+  totalTime: 360
+  rewardPerStar: 230
+  hasDarkness: 1
+  itemsInChest:
+  - {fileID: 11400000, guid: f20c2e22a3f5a2046beddf92631a05d4, type: 2}
+  - {fileID: 11400000, guid: 8b762ee40c4868a428f1ba46cfdc76ca, type: 2}
+  - {fileID: 11400000, guid: f040469913b59f84d8159717908ffa65, type: 2}
+  - {fileID: 11400000, guid: dd249d9ecddffcd4bb2c1fbb44dedcaa, type: 2}
+  - {fileID: 11400000, guid: a97065e099299ab46a51edce9f3ed9ba, type: 2}
+  - {fileID: 11400000, guid: 64aa3ad90a1690042aab3a1ec28e2bf3, type: 2}
+  minigamePrefab: {fileID: 0}
+  enemyCount: 50
+  enemyPrefabs:
+  - {fileID: 4120047376489393640, guid: f5b635987f123ff44a4360d5ae23d2b4, type: 3}
+  - {fileID: 807893492026878213, guid: 2a7a86dbf8c6cd84bba891ca9879d929, type: 3}
+  goalPrefab: {fileID: 7499124712415476066, guid: 1fa7aa43da69fdc44bcd562c790c2c6e, type: 3}
+  keyPrefab: {fileID: 9181937310886115590, guid: 80968e51efc3dde4aac27be2b16f9b9a, type: 3}
+  playerSpawnPoint: {x: -19, y: -22, z: 0}
+  goalSpawnPoint:
+  - {x: 16, y: 22, z: 0}
+  keySpawnPoints:
+  - {x: 16, y: -22, z: 0}
+  - {x: -6, y: -14, z: 0}
+  - {x: -29, y: -15, z: 0}
+  - {x: -13, y: -2, z: 0}
+  - {x: -35, y: 23, z: 0}
+  - {x: 14.5, y: -3.5, z: 0}
+  - {x: -31, y: -11, z: 0}
+  questName: Destroy the center
+  difficultyDescription: High Risk
+  completionDialogue: {fileID: 11400000, guid: 9b661941b3b5e734ca2ea77ef468878f, type: 2}
+  missionIndex: 13
+  questDescription: the receiver at the north east
